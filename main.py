@@ -1,4 +1,10 @@
-from twitter import pullTwitter, get_start_date
+from twitter import pullTwitter, getStartDate, timePartitionListWrapper
+from bs4 import BeautifulSoup
+import requests
+import re
+from datetime import *
 
-get_start_date('umbernhard')
-pullTwitter('umbernhard')
+
+#getStartDate('umbernhard')
+#pullTwitter('umbernhard')
+timePartitionListWrapper('umbernhard', datetime.now() - timedelta(weeks = 30))
